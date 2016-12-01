@@ -1,0 +1,91 @@
+/*
+                siphartab.put("sipkayid", sipid);
+                siphartab.put("skod", siparisler.get(i).getDbskod());
+                siphartab.put("renkid", siparisler.get(i).getDbrenkid());
+                siphartab.put("renk", siparisler.get(i).getDbrenk());
+                siphartab.put("bedid", siparisler.get(i).getDbbedid());
+                siphartab.put("beden", siparisler.get(i).getDbbed());
+                siphartab.put("miktar", siparisler.get(i).getDbmiktar());
+                siphartab.put("fiyat", siparisler.get(i).getDbfiyat());
+                siphartab.put("kur", siparisler.get(i).getDbkur());
+                siphartab.put("isk","0");
+                siphartab.put("iskoran","0");
+                siphartab.put ("fiyattoplam",siparisler.get(i).getDbfiyattoplam ());
+                siphartab.put ("kdvoran",siparisler.get(i).getDbkdvoran ());
+                siphartab.put ("tutar",siparisler.get(i).getDbtutar ());
+                siphartab.put ("kdvtoplam",siparisler.get(i).getDbkdvtoplam ());
+                siphartab.put ("hindex",siparisler.get(i).getDbhindex ());
+
+                db2.update ("siparishar", siphartab, "sipkayid" +"= ?", new String[] { String.valueOf(sipid) });
+*/
+//String.endsWith("00")
+
+bu belirtilenden sonrakini alır. substring gibi
+
+
+
+Çizgi
+--------------------------------------------
+ <View
+ android:layout_height="match_parent"
+ android:layout_width="2dp"
+ android:background="#FF0000" />
+
+ Barchart
+ --------------------
+ //Barchart start
+     public void grafik_barchart (){
+
+
+         BarData data2 = new BarData(getXAxisValues(), getDataSet());
+         barchart.setData(data2);
+         barchart.setDescription("Offline Siparis");
+         barchart.animateXY(2000, 2000);
+         barchart.invalidate();
+         data2.setValueTextSize (20);//Barların üzerindeki değer fontu
+         barchart.setDescriptionTextSize (200);//
+     }
+
+     private ArrayList<BarDataSet> getDataSet() {
+         ArrayList<BarDataSet> dataSets = null;
+
+         ArrayList<BarEntry> valueSet1 = new ArrayList<>();
+         BarEntry v1e1 = new BarEntry(110.000f, 0); // Jan
+         valueSet1.add(v1e1);
+         ArrayList<BarEntry> valueSet2 = new ArrayList<>();
+         BarEntry v2e2 = new BarEntry(90.000f,0 ); // Feb
+         valueSet2.add(v2e2);
+         BarDataSet barDataSet1 = new BarDataSet(valueSet1, "Borç");
+         barDataSet1.setColor(Color.rgb(0, 155, 0));
+         barDataSet1.setValueTextSize (50);
+
+         BarDataSet barDataSet2 = new BarDataSet(valueSet2, "Alacak");
+         barDataSet2.setColors(ColorTemplate.COLORFUL_COLORS);
+         barDataSet2.setValueTextSize (50);
+
+         dataSets = new ArrayList<>();
+         dataSets.add(barDataSet1);
+         dataSets.add(barDataSet2);
+
+         return dataSets;
+     }
+
+     private ArrayList<String> getXAxisValues() {
+         ArrayList<String> xAxis = new ArrayList<>();
+
+         xAxis.add("Bakiye : 2.000 tl Alacak");
+
+
+         return xAxis;
+     }
+ //Barchart End
+ //Boş kayıt siliniyor
+         if (stokmevcutlari.size()>1) {
+             String boskayit = "";
+             for (int i = 0; i < stokmevcutlari.size(); i++)
+             {
+                 if (boskayit.equals(stokmevcutlari.get(i).getDbskod())) {
+                     stokmevcutlari.remove(i);
+                     Log.d("silme","Stok kodu boş olanlar siparişler diziden siliniyor");
+                 }
+             }}

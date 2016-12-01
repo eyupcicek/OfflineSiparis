@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!--
+            <item android:state_pressed="true" android:drawable="@drawable/pressedback" />
+            <item android:state_selected="true" android:drawable="@drawable/pressedback" />
+             <item android:state_focused="true" android:drawable="@drawable/focusedback" />
+
+
+        <item android:state_pressed="true" android:drawable="@color/koyumavi" />
+        <item android:state_selected="true" android:drawable="@color/pembe"/>
+        <item android:state_focused="true" android:drawable="@color/mavi"   /> -->
+        <item android:drawable="@drawable/buton_menu_active" ></item>
+
+
+
+
+</selector>
+

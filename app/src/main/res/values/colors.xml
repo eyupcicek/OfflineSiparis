@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mavi">#3F51B5</color><!-- -->
+    <color name="koyumavi">#303f9f</color>
+    <color name="siyah">#000000</color>
+    <color name="pembe">#FF4081</color>
+    <color name="beyaz">#ffffff</color>
+    <color name="gri">#e8e8e8</color>
+    <color name="kirmizi">#ff0404</color>
+    <color name="koyugri">#777777</color>
+    <color name="btncari">#9999FF</color>
+    <color name="btnsiparis">#009933</color>
+    <color name="btnstok">#FF9933</color>
+    <color name="btnrapor">#FF00FF</color>
+    <color name="btnactive">#80000000</color>
+    <color name="buttonface">#D6D3CE</color>
+    <color name="transparent">#00000000</color>
+</resources>

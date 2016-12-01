@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:padding="3sp"
+              android:layout_height="match_parent"
+              android:background="#ffffff">
+
+
+        <TabHost
+            android:id="@+id/dataindirtabhost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|start"
+                    android:textAlignment="center"
+                    android:layout_gravity="top|center_horizontal"
+                    android:foregroundGravity="top">
+                </TabWidget>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:id="@+id/datatab1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+
+                        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+                                    xmlns:tools="http://schemas.android.com/tools"
+
+                                    tools:context=".EditEntry"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/ScrollView"
+
+                                    android:layout_width="match_parent"
+                                    android:fillViewport="true"
+                                    android:fadeScrollbars="true"
+                                    android:fadingEdge="horizontal|vertical"
+                                    android:isScrollContainer="false"
+                                    android:keepScreenOn="true">
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="3dp"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ozelliklayout"
+                            android:layout_marginBottom="3dp"
+                            android:background="@drawable/edittext_bg"
+                            android:scrollbars="horizontal|vertical"
+                            android:verticalScrollbarPosition="defaultPosition"
+                            android:scrollIndicators="bottom|right"
+                            android:nestedScrollingEnabled="true"
+                            android:fadingEdge="horizontal|vertical">
+
+                            <TextView
+                                android:background="@drawable/table_bg" android:layout_gravity="center_horizontal"
+                                android:layout_width="match_parent" android:gravity="center_vertical|center_horizontal"
+                                android:layout_height="wrap_content" android:textColor="@color/koyumavi"
+                                android:text="Aktarılacak Datalar"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:background="@drawable/table_bg"
+                                android:layout_width="match_parent" android:gravity="center_vertical|left"
+                                android:layout_height="wrap_content" android:textColor="@color/kirmizi"
+                                android:text="Cari Kartlar : "
+                                android:id="@+id/tv_carisize"
+                                android:textStyle="bold"/>
+                            <ListView
+                                android:id="@+id/listView1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fastScrollEnabled="false"
+                                android:scrollbars="none">
+                            </ListView>
+                            <TextView
+                                android:background="@drawable/table_bg"
+                                android:layout_width="match_parent" android:gravity="center_vertical|left"
+                                android:layout_height="wrap_content" android:textColor="@color/kirmizi"
+                                android:text="Siparişler : "
+                                android:id="@+id/tv_siparissize"
+                                android:textStyle="bold"/>
+                            <ListView
+                                android:id="@+id/listView2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scrollbars="none">
+                            </ListView>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Button
+                                    android:layout_height="80dp"
+                                    android:text="DATA GONDER"
+                                    android:id="@+id/btngonder"
+
+                                    android:elevation="0dp"
+                                    android:layout_width="150dp"
+                                    />
+
+                                <Button
+                                    android:layout_width="150dp"
+                                    android:layout_height="80dp"
+                                    android:text="Data İndir"
+                                    android:id="@+id/btnindir"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        </ScrollView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/datatab2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="3dp"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ozelliklayout"
+                            android:layout_marginBottom="3dp"
+                            android:background="@drawable/edittext_bg">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2"
+                                android:layout_weight="0"
+                                android:id="@+id/linearLayout_tel1">
+                                <TextView
+                                    android:layout_width="107dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:text="Ftp Adresi"
+                                    android:padding="5sp"
+                                    android:id="@+id/textView1354" />
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="textPersonName"
+                                    android:padding="5sp"
+                                    android:layout_marginTop="5dp"
+                                    android:ems="10"
+                                    android:text="siparisci.korgun.net"
+                                    android:layout_weight="2"
+                                    android:id="@+id/et_telefon"
+                                    android:textSize="@dimen/textbox_font"
+                                    android:background="@drawable/edittext_bg"
+                                    android:layout_column="5" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2"
+                                android:layout_weight="0"
+                                android:id="@+id/linearLayout_gsm">
+                                <TextView
+                                    android:layout_width="109dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:text="Kullanıcı Adı"
+                                    android:padding="5sp"
+                                    android:id="@+id/textView13hh5" />
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="textPersonName"
+                                    android:padding="5sp"
+                                    android:layout_marginTop="5dp"
+                                    android:ems="10"
+                                    android:text="wwwroot"
+                                    android:layout_weight="2"
+                                    android:id="@+id/et_cgsm"
+                                    android:textSize="@dimen/textbox_font"
+                                    android:background="@drawable/edittext_bg"
+                                    android:layout_column="5" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2"
+                                android:layout_weight="0"
+                                android:id="@+id/linearLayout_gsm">
+                                <TextView
+                                    android:layout_width="109dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:text="Şifre"
+                                    android:padding="5sp"
+                                    android:id="@+id/textView13hh5" />
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="textPersonName"
+                                    android:padding="5sp"
+                                    android:layout_marginTop="5dp"
+                                    android:ems="10"
+                                    android:layout_weight="2"
+                                    android:id="@+id/et_cgsm"
+                                    android:textSize="@dimen/textbox_font"
+                                    android:background="@drawable/edittext_bg"
+                                    android:layout_column="5" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2"
+                                android:layout_weight="0"
+                                android:id="@+id/linearLayout_adres1">
+                                <TextView
+                                    android:layout_width="109dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:text="Klasör"
+                                    android:padding="5sp"
+                                    android:id="@+id/textView135" />
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="textPersonName"
+                                    android:padding="5sp"
+                                    android:layout_marginTop="5dp"
+                                    android:ems="10"
+                                    android:layout_weight="2"
+                                    android:id="@+id/et_cadres1"
+                                    android:textSize="@dimen/textbox_font"
+                                    android:background="@drawable/edittext_bg"
+                                    android:layout_column="5" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+
+                                android:layout_marginTop="2dp"
+                                android:paddingLeft="2dp"
+                                android:layout_gravity="bottom|center_horizontal"
+
+                                android:layout_height="wrap_content"
+                                android:id="@+id/linearLayoutbuton"
+                                android:paddingRight="2dp"
+                                android:gravity="center_vertical|end"
+                                android:scrollIndicators="right"
+                                android:layout_weight="2">
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:layout_marginRight="8sp"
+                                    android:elevation="2dp"
+                                    android:background="@drawable/buton5"
+                                    android:text="Kaydet"
+                                    android:id="@+id/btn_cariyeni"
+                                    android:layout_gravity="center_vertical"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/datatab3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+
+                        />
+
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+
+
+
+
+
+</LinearLayout>

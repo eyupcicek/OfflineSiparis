@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:id="@+id/cari_linearlayout"
+        android:layout_gravity="center_horizontal"
+
+
+        android:gravity="bottom"
+        android:background="@drawable/table_bg"
+        android:layout_alignParentEnd="true">
+
+    <TextView
+        android:id="@+id/row_tvkod"
+        android:textStyle="bold"
+        android:textColor="@color/koyumavi"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:text="kod"
+        android:layout_weight="2"/>
+
+    <TextView
+        android:id="@+id/row_tvtanim1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textColor="@color/koyumavi"
+        android:layout_gravity="center"
+        android:text="tanim"
+        android:layout_weight="2"/>
+
+        <TextView
+            android:id="@+id/row_tvtanim2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/koyumavi"
+            android:layout_gravity="left"
+            android:text="tanim"
+            android:layout_weight="6"/>
+</LinearLayout>
+
+</RelativeLayout>

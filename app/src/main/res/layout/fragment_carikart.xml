@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:padding="3sp"
+              android:layout_height="match_parent"
+              android:background="#ffffff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/resimlayout"
+        android:orientation="horizontal"
+        android:padding="2sp"
+        android:layout_weight="0">
+        <ImageView
+            android:id="@+id/img"
+            android:scaleType="centerInside"
+            android:layout_height="110dp"
+
+            android:src="@drawable/resimyok"
+            android:layout_width="wrap_content"
+            android:layout_weight="1" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:layout_margin="0dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+
+                android:text="Cari Kod"
+                android:ems="10"
+                android:padding="2dp"
+                android:id="@+id/editText4"
+                />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textSize="@dimen/textbox_font"
+                android:background="@drawable/edittext_bg"
+                android:ems="10"
+                android:id="@+id/et_ckod"
+                android:layout_weight="1"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="2"
+        android:text=". . ."
+        android:textStyle="bold"
+        android:id="@+id/btn_caricarilist"/>
+</LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="Cari Tanım"
+                android:visibility="visible"
+                android:ems="10" android:padding="2dp"
+                android:id="@+id/editText5"  />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:background="@drawable/edittext_bg"
+                android:padding="5sp"
+                android:ems="10"
+                android:layout_marginBottom="10sp"
+                android:textSize="@dimen/textbox_font"
+                android:id="@+id/et_ctanim"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TabHost
+        android:id="@+id/caritabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|start"
+                android:textAlignment="center"
+                android:layout_gravity="top|center_horizontal"
+                android:foregroundGravity="top">
+            </TabWidget>
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:id="@+id/caritab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_marginTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingTop="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ozelliklayout"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/edittext_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_weight="0"
+            android:id="@+id/linearLayout_tel1">
+            <TextView
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Telefon"
+                android:padding="5sp"
+                android:id="@+id/textView1354" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:padding="5sp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:layout_weight="2"
+                android:id="@+id/et_telefon"
+                android:textSize="@dimen/textbox_font"
+                android:background="@drawable/edittext_bg"
+                android:layout_column="5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_weight="0"
+            android:id="@+id/linearLayout_gsm">
+            <TextView
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="GSM"
+                android:padding="5sp"
+                android:id="@+id/textView13hh5" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:padding="5sp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:layout_weight="2"
+                android:id="@+id/et_cgsm"
+                android:textSize="@dimen/textbox_font"
+                android:background="@drawable/edittext_bg"
+                android:layout_column="5" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_weight="0"
+            android:id="@+id/linearLayout_adres1">
+            <TextView
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Adres "
+                android:padding="5sp"
+                android:id="@+id/textView135" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:padding="5sp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:layout_weight="2"
+                android:id="@+id/et_cadres1"
+                android:textSize="@dimen/textbox_font"
+                android:background="@drawable/edittext_bg"
+                android:layout_column="5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_weight="0"
+            android:id="@+id/linearLayout_adres2">
+            <TextView
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:padding="5sp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/textView155" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:padding="5sp"
+                android:textSize="@dimen/textbox_font"
+                android:background="@drawable/edittext_bg"
+                android:ems="10"     android:layout_marginTop="5dp"
+                android:layout_weight="2"
+                android:id="@+id/et_cadres2"
+                android:layout_column="5" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout_ilce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_weight="0">
+            <TextView
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="İlçe"
+                android:padding="5sp"
+                android:id="@+id/textView15" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:padding="5sp"
+                android:textSize="@dimen/textbox_font"
+                android:background="@drawable/edittext_bg"
+                android:ems="10"
+                android:layout_weight="2"
+                android:id="@+id/et_csemt"
+                android:layout_column="5" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:id="@+id/linearLayout_il"
+            android:layout_weight="0">
+            <TextView
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Şehir" android:padding="5sp"
+                android:id="@+id/textView115" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:padding="5sp"
+                android:textSize="@dimen/textbox_font"
+                android:background="@drawable/edittext_bg"
+                android:ems="10"
+                android:layout_weight="2"
+                android:id="@+id/et_csehir"
+                android:layout_column="5" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_weight="0"
+            android:id="@+id/linearLayout_ulke">
+            <TextView
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Ülke"
+                android:padding="5sp"
+                android:id="@+id/textVieKw135" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:padding="5sp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:layout_weight="2"
+                android:id="@+id/et_culke"
+                android:textSize="@dimen/textbox_font"
+                android:background="@drawable/edittext_bg"
+                android:layout_column="5" />
+        </LinearLayout>
+
+    </LinearLayout>
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+
+        android:layout_marginTop="2dp"
+        android:paddingLeft="2dp"
+        android:layout_gravity="bottom|center_horizontal"
+
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutbuton"
+        android:paddingRight="2dp"
+        android:gravity="center_vertical|end"
+        android:scrollIndicators="right"
+        android:layout_weight="2">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="8sp"
+            android:elevation="2dp"
+            android:background="@drawable/buton5"
+            android:text="Yeni"
+            android:id="@+id/btn_cariyeni"
+            android:layout_gravity="center_vertical"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="8sp"
+            android:elevation="2dp"
+            android:background="@drawable/buton5"
+            android:text="KAydet"
+            android:id="@+id/btn_carikaydet"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="8sp"
+            android:textColor="@color/beyaz"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buton6"
+            android:text="SİL"
+            android:id="@+id/btn_carisil"/>
+    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/caritab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/pchart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+
+
+                </LinearLayout>
+        </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>

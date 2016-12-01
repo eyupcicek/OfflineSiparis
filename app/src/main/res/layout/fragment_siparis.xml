@@ -1,0 +1,546 @@
+<!--suppress AndroidMissingOnClickHandler, AndroidMissingOnClickHandler -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/table_bg"
+    android:id="@+id/analayout"
+    android:weightSum="1">
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/no_linearlayout"
+        android:padding="3dp"
+        android:layout_gravity="bottom"
+        android:gravity="bottom">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="No"
+            android:textSize="14sp"
+            android:id="@+id/textView5" />
+
+        <EditText
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:id="@+id/et_sipno" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="37dp"
+            android:layout_height="40dp"
+            android:text="..."
+            android:textSize="12sp"
+
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textAlignment="gravity"
+            android:layout_gravity="top"
+            android:gravity="top"
+            android:focusable="false"
+            android:foregroundGravity="top"
+            android:id="@+id/btn_siplist"
+            android:layout_margin="0dp" />
+
+        <TextView
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Belge No"
+            android:textSize="13sp"
+            android:id="@+id/textView2"
+            android:layout_marginLeft="3dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:id="@+id/et_sipbelgeno"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tarih_linearlayout"
+        android:layout_gravity="center_horizontal"
+        android:padding="3dp"
+        android:gravity="bottom">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Tarih"
+            android:textSize="14sp"
+            android:id="@+id/textView3" />
+
+        <!--suppress AndroidMissingOnClickHandler, AndroidMissingOnClickHandler -->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:inputType="textPersonName"
+            android:background="@drawable/edittext_bg"
+            android:onClick="btn_siptar"
+            android:ems="10"
+            android:id="@+id/btn_siptar"
+            android:textSize="16sp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="57dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Termin"
+            android:textSize="14sp"
+            android:id="@+id/textView4"
+            android:layout_marginLeft="3dp" />
+
+        <!--suppress AndroidMissingOnClickHandler, AndroidMissingOnClickHandler -->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:inputType="textPersonName"
+            android:background="@drawable/edittext_bg"
+            android:onClick="btn_tertar"
+            android:ems="10"
+            android:id="@+id/btn_tertar"
+            android:textSize="16sp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/cari_linearlayout"
+        android:layout_gravity="center_horizontal"
+        android:padding="3dp"
+        android:weightSum="3"
+        android:layout_weight="0"
+        android:gravity="bottom">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Cari Unvan"
+            android:textSize="14sp"
+            android:id="@+id/textView3"
+            android:layout_weight="0" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:background="@drawable/edittext_bg"
+
+            android:ems="10"
+            android:id="@+id/et_cariname"
+            android:textColor="#030000"
+            android:textIsSelectable="false"
+            android:layout_weight="3"
+            android:textSize="16sp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:text="..."
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textAlignment="gravity"
+            android:gravity="top"
+            android:focusable="false"
+            android:foregroundGravity="top"
+            android:id="@+id/btn_carilist"
+            android:layout_weight="0"
+            android:layout_gravity="top|bottom" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/iskonto_linearlayout"
+        android:padding="3dp"
+        android:gravity="bottom"
+        android:layout_gravity="center_vertical|bottom"
+        >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="İskonto"
+            android:textSize="14sp"
+            android:id="@+id/textView5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Oran  "
+            android:textSize="13sp"
+            android:id="@+id/textView6"
+            android:layout_marginLeft="3dp" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:background="@drawable/edittext_bg"
+            android:id="@+id/et_sipiskoran"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="  Tutar"
+            android:textSize="13sp"
+            android:id="@+id/textView2"
+            android:layout_marginLeft="3dp" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:id="@+id/et_sipisktutar"
+            android:textSize="16sp"
+            android:layout_weight="2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/barkod_linearlayout"
+        android:layout_gravity="center_horizontal"
+        android:padding="3dp"
+        android:layout_weight="0"
+        android:gravity="left|center">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/barkod"
+            android:textSize="14sp"
+            android:id="@+id/textView3"
+            android:layout_weight="0" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:id="@+id/et_sipbarkod"
+            android:layout_weight="3" />
+
+        <ImageButton
+            android:layout_width="29dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_img"
+            android:src="@drawable/karekod"
+            android:fadeScrollbars="false"
+            android:saveEnabled="true"
+            android:scaleType="fitXY"
+            android:padding="0dp"
+            android:layout_weight="0.01"
+            android:hapticFeedbackEnabled="true"/>
+
+        <RadioGroup
+            android:layout_width="0dp" android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D"
+                android:id="@+id/radioButton3"
+
+                android:checked="true"
+                android:textSize="11sp"
+                android:layout_weight="0" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A"
+                android:id="@+id/radioButton2"
+                android:checked="false"
+                android:textSize="11sp"
+                android:layout_weight="0" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:background="@color/gri"
+    android:id="@+id/siparis_linearlayout">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/stok_linearlayout">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+                xmlns:tools="http://schemas.android.com/tools"
+                 android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context=".EditEntry"
+                android:scrollbars="horizontal|vertical|none"
+                android:layout_height="fill_parent"
+                android:id="@+id/ScrollView"
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:fillViewport="true"
+                android:background="@drawable/table_bg" >
+
+<HorizontalScrollView
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".EditEntry"
+    android:scrollbars="horizontal|vertical|none"
+    android:layout_height="fill_parent"
+    android:id="@+id/HorizontalScrollView"
+    android:layout_width="fill_parent"
+    android:orientation="horizontal"
+    android:fillViewport="true"
+    >
+
+
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                     android:id="@+id/siptablelayout"
+
+                     android:layout_width="fill_parent"
+                     android:layout_height="fill_parent"
+                     android:layout_weight="0"
+
+                     android:scrollIndicators="bottom|right"
+
+                     android:orientation="horizontal"
+                     android:stretchColumns="*">
+
+
+
+
+        </TableLayout>
+</HorizontalScrollView>
+    </ScrollView>
+</LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/toplamlar_linearlayout"
+        android:layout_weight="0"
+        android:layout_gravity="right">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_weight="0" >
+
+            <TextView
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Fiş Toplamı"
+                android:id="@+id/textView7" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/et_ftoplam"
+                android:textSize="@dimen/textbox_font"
+                android:layout_column="5"
+                android:layout_weight="3"
+                android:background="@drawable/table_bg"
+                android:layout_gravity="right"
+                android:textAlignment="textEnd"
+                android:paddingRight="7dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_weight="0" >
+
+            <TextView
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Kdv"
+                android:id="@+id/textView8" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:inputType="textPersonName"
+                android:textSize="@dimen/textbox_font"
+                android:ems="10"
+                android:layout_weight="3"
+                android:id="@+id/et_kdvtoplam"
+                android:layout_column="5"
+                android:background="@drawable/table_bg"
+                android:layout_gravity="right"
+                android:textAlignment="textEnd"
+                android:paddingRight="7dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_weight="0" >
+
+            <TextView
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Genel Toplam"
+                android:id="@+id/textView9" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:inputType="textPersonName"
+                android:textSize="@dimen/textbox_font"
+                android:ems="10"
+                android:layout_weight="3"
+                android:id="@+id/et_geneltoplam"
+                android:layout_column="5"
+                android:background="@drawable/table_bg"
+                android:layout_gravity="right"
+                android:textAlignment="textEnd"
+                android:paddingRight="7dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/koyumavi"
+        android:id="@+id/button_linearlayout">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ekle"
+            android:id="@+id/btn_sipekle"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yeni"
+            android:id="@+id/btn_sipyeni"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            />
+
+
+
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kaydet"
+        android:id="@+id/btn_sipkaydet"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sil"
+        android:id="@+id/btn_sipsil"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</LinearLayout>
+
+
+
+
+</LinearLayout>
+
+</RelativeLayout>

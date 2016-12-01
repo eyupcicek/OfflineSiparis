@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Offline Siparis</string>
+    <string name="matrix_dialog">Kaydet/Kapat</string>
+    <string name="Vazgeç">Vazgeç</string>
+    <string name="dialog_kapat">Kapat</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_tablodetay">Detaylı Görünüm</string>
+    <string name="action_tablogenel">Genel Görünüm</string>
+    <string name="barkod">Barkod</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:title="Stok İşlemleri">
+            <menu>
+                <item android:id="@+id/siparislist" android:icon="@android:drawable/ic_menu_camera"
+                    android:title="Siparişe Başla" />
+                <item android:id="@+id/stoklist" android:icon="@android:drawable/ic_menu_gallery"
+                    android:title="Stok Listesi" />
+
+                <item android:id="@+id/stokbul" android:icon="@android:drawable/ic_menu_manage"
+                    android:title="Stok Bul" />
+            </menu>
+        </item>
+    </group>
+
+    <item android:title="Finansal İşlemler">
+        <menu>
+            <item android:id="@+id/cariextre" android:icon="@android:drawable/ic_menu_share"
+                android:title="Cari Extre" />
+            <item android:id="@+id/kasaislem" android:icon="@android:drawable/ic_menu_send"
+                android:title="Kasa İşlemleri" />
+
+        </menu>
+    </item>
+
+    <item android:title="Ayarlar">
+        <menu>
+            <item android:id="@+id/barkod" android:icon="@drawable/karekod"
+                android:title="Barkod Ayarları" />
+            <item android:id="@+id/data" android:icon="@drawable/brkd"
+                android:title="Database İşlemleri" />
+            <item android:id="@+id/cikis" android:icon="@drawable/exit"
+                android:title="Çıkış" />
+
+        </menu>
+    </item>
+</menu>
